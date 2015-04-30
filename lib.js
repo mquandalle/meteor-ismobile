@@ -8,3 +8,7 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
   isMobile = true;
 }
 Meteor.isMobile = isMobile;
+
+Template.registerHelper("isMobile", function() {
+  return Meteor.isMobile;
+});

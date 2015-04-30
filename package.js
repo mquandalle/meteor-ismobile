@@ -7,6 +7,6 @@ Package.describe({
 
 Package.onUse(function (api) {
   api.versionsFrom("METEOR@0.9.0");
-  api.use("meteor", "client");
+  api.use(["meteor", "templating"], "client");
   api.addFiles(["lib.js"], "client");
 });
